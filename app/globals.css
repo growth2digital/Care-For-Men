@@ -1,0 +1,431 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Menlo", monospace;
+}
+
+:root {
+  /* Dark theme - Black background with premium gold accents */
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --card: #141414;
+  --card-foreground: #f5f5f5;
+  --popover: #141414;
+  --popover-foreground: #f5f5f5;
+  --primary: #D4AF37;
+  --primary-foreground: #0a0a0a;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #f5f5f5;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --accent: #D4AF37;
+  --accent-foreground: #0a0a0a;
+  --destructive: #dc2626;
+  --destructive-foreground: #fef2f2;
+  --border: #262626;
+  --input: #262626;
+  --ring: #D4AF37;
+  --chart-1: #D4AF37;
+  --chart-2: #3D405B;
+  --chart-3: #81B29A;
+  --chart-4: #F2CC8F;
+  --chart-5: #F4F1DE;
+  --radius: 0.75rem;
+  
+  /* Premium Gold Palette */
+  --gold-dark: #A67C00;
+  --gold-primary: #D4AF37;
+  --gold-bright: #F9E498;
+  --coral: #D4AF37;
+  --coral-dark: #A67C00;
+  --navy: #3D405B;
+  --gold: #F9E498;
+  
+  /* Gradient colors - Premium Metallic Gold */
+  --gradient-from: #A67C00;
+  --gradient-to: #F9E498;
+  
+  /* Dark surface colors */
+  --surface-dark: #0a0a0a;
+  --surface-dark-alt: #0f0f0f;
+
+  /* Light (Soft UI) surface colors */
+  --surface-light: #ecedf1;
+  --surface-light-alt: #e4e5ea;
+  --ink: #1c1d22;
+  --ink-muted: #6b6d78;
+  
+  /* WhatsApp green */
+  --whatsapp: #25D366;
+  --whatsapp-dark: #20BA5C;
+
+  /* Shadcn sidebar variables - added from diff */
+  --sidebar: oklch(0.985 0 0); /* Keeping light theme default as this root is for light theme */
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --card: #141414;
+  --card-foreground: #f5f5f5;
+  --popover: #141414;
+  --popover-foreground: #f5f5f5;
+  --primary: #D4AF37;
+  --primary-foreground: #0a0a0a;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #f5f5f5;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --accent: #D4AF37;
+  --accent-foreground: #0a0a0a;
+  --destructive: #dc2626;
+  --destructive-foreground: #fef2f2;
+  --border: #262626;
+  --input: #262626;
+  --ring: #D4AF37;
+  --chart-1: #D4AF37;
+  --chart-2: #3D405B;
+  --chart-3: #81B29A;
+  --chart-4: #F2CC8F;
+  --chart-5: #F4F1DE;
+  --radius: 0.75rem;
+
+  /* Premium Gold Palette */
+  --gold-dark: #A67C00;
+  --gold-primary: #D4AF37;
+  --gold-bright: #F9E498;
+  --coral: #D4AF37;
+  --coral-dark: #A67C00;
+  --navy: #3D405B;
+  --gold: #F9E498;
+  
+  /* Gradient colors - Premium Metallic Gold */
+  --gradient-from: #A67C00;
+  --gradient-to: #F9E498;
+  
+  /* Dark surface colors */
+  --surface-dark: #0a0a0a;
+  --surface-dark-alt: #0f0f0f;
+
+  /* Light (Soft UI) surface colors */
+  --surface-light: #ecedf1;
+  --surface-light-alt: #e4e5ea;
+  --ink: #1c1d22;
+  --ink-muted: #6b6d78;
+  
+  /* WhatsApp green */
+  --whatsapp: #25D366;
+  --whatsapp-dark: #20BA5C;
+
+  /* Shadcn sidebar variables for dark theme - added from diff */
+  --sidebar: oklch(0.205 0 0); 
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom coral color for Tailwind classes */
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  
+  /* Surface colors for Tailwind */
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-alt: var(--surface-dark-alt);
+  --color-surface-light: var(--surface-light);
+  --color-surface-light-alt: var(--surface-light-alt);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  
+  /* WhatsApp colors for Tailwind */
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+
+  /* Shadcn sidebar colors - added from diff */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Modern dark glassmorphism styles */
+.glass-card {
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Neumorphism (Soft UI) - light sections */
+.neu-raised {
+  background: var(--surface-light);
+  border-radius: 1rem;
+  box-shadow: 8px 8px 18px rgba(163, 166, 178, 0.55), -8px -8px 18px rgba(255, 255, 255, 0.9);
+}
+
+.neu-raised-sm {
+  background: var(--surface-light);
+  border-radius: 0.75rem;
+  box-shadow: 5px 5px 12px rgba(163, 166, 178, 0.5), -5px -5px 12px rgba(255, 255, 255, 0.9);
+}
+
+.neu-inset {
+  background: var(--surface-light);
+  border-radius: 1rem;
+  box-shadow: inset 5px 5px 11px rgba(163, 166, 178, 0.55), inset -5px -5px 11px rgba(255, 255, 255, 0.9);
+}
+
+.neu-pill {
+  background: var(--surface-light);
+  box-shadow: 5px 5px 12px rgba(163, 166, 178, 0.5), -5px -5px 12px rgba(255, 255, 255, 0.9);
+}
+
+/* Dark shadow for cards */
+.shadow-dark {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 175, 55, 0.1);
+}
+
+.shadow-dark-lg {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 60px rgba(212, 175, 55, 0.15);
+}
+
+/* Glow effects - Premium Gold */
+.glow-coral {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4), 0 0 50px rgba(166, 124, 0, 0.2);
+}
+
+.glow-coral-intense {
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.6), 0 0 70px rgba(249, 228, 152, 0.3);
+}
+
+/* Text glow - Premium Gold */
+.text-glow {
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.6), 0 0 60px rgba(166, 124, 0, 0.4);
+}
+
+/* Gradient text - Premium Metallic Gold */
+.text-gradient {
+  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Gradient background for buttons and elements - Premium Metallic Gold */
+.bg-gradient-coral {
+  background: linear-gradient(135deg, #A67C00 0%, #D4AF37 50%, #F9E498 100%);
+  color: #000;
+  font-weight: bold;
+}
+
+.bg-gradient-coral:hover {
+  background: linear-gradient(135deg, #F9E498 0%, #D4AF37 50%, #A67C00 100%);
+}
+
+/* Premium button styling */
+.btn-premium {
+  background: linear-gradient(135deg, #A67C00 0%, #D4AF37 50%, #F9E498 100%);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+  background: linear-gradient(135deg, #F9E498 0%, #D4AF37 50%, #A67C00 100%);
+  box-shadow: 0px 6px 20px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Gradient border - Premium Gold */
+.border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+              linear-gradient(135deg, #A67C00, #D4AF37, #F9E498) border-box;
+}
+
+/* Thin gold border for cards */
+.border-gold-thin {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.border-gold-thin:hover {
+  border: 1px solid rgba(212, 175, 55, 0.6);
+}
+
+/* Gradient underline - Premium Gold */
+.underline-gradient {
+  background: linear-gradient(90deg, #A67C00, #D4AF37, #F9E498);
+  height: 2px;
+}
+
+/* Section divider with star */
+.divider-with-star {
+  position: relative;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.divider-with-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  transform: translateY(-50%);
+}
+
+.divider-with-star::after {
+  content: '★';
+  position: relative;
+  display: inline-block;
+  background: #0a0a0a;
+  padding: 0 1rem;
+  color: #D4AF37;
+  font-size: 1.25rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #A67C00, #D4AF37, #F9E498);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #F9E498, #D4AF37, #A67C00);
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+/* Animation for elements entering viewport */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive text sizes */
+@media (max-width: 640px) {
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .text-responsive-xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+/* Loading animation for images */
+.image-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
