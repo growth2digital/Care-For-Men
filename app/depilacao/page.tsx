@@ -681,11 +681,11 @@ export default function DepilacaoPage() {
       {/* ── WhatsApp Float ── */}
       <button
         onClick={() => openWhatsApp()}
-        className="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all"
+        className="whatsapp-pulse fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all"
         aria-label="Falar no WhatsApp"
       >
         <img
-          src="/whatsapp-float.png"
+          src="/whatsapp_float.png"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-contain drop-shadow"

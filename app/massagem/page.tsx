@@ -740,11 +740,11 @@ export default function MassagemPage() {
       <a
         href="#"
         onClick={(e) => { e.preventDefault(); openWhatsApp() }}
-        className="contato-whatsapp fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+        className="contato-whatsapp whatsapp-pulse fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
         style={{ background: "#25D366", boxShadow: "0 4px 20px rgba(37,211,102,0.4)" }}
         aria-label="Agendar pelo WhatsApp"
       >
-        <Image src="/whatsapp-button.png" alt="WhatsApp" width={32} height={32} className="object-contain" />
+        <Image src="/whatsapp_float.png" alt="WhatsApp" width={32} height={32} className="object-contain" />
       </a>
     </div>
   )

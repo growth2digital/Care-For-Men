@@ -663,9 +663,9 @@ export default function CuidadosMasculinosPage() {
       {/* Floating WhatsApp Button */}
       <button
         onClick={() => openWhatsApp()}
-        className="fixed bottom-8 right-8 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40 contato-whatsapp"
+        className="whatsapp-pulse fixed bottom-8 right-8 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40 contato-whatsapp"
       >
-        <Image src="/whatsapp-button.png" alt="WhatsApp" width={56} height={56} className="object-contain" />
+        <Image src="/whatsapp_float.png" alt="WhatsApp" width={56} height={56} className="object-contain" />
       </button>
 
 
