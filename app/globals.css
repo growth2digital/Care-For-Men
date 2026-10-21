@@ -431,19 +431,33 @@ a:focus-visible {
 }
 
 .whatsapp-pulse {
-  position: relative;
   isolation: isolate;
+  overflow: visible !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .whatsapp-pulse::before {
   content: "";
   position: absolute;
-  inset: -8px;
-  z-index: -1;
+  inset: -9px;
+  z-index: 0;
   border-radius: 9999px;
-  border: 3px solid rgba(37, 211, 102, 0.55);
-  animation: whatsapp-pulse-ring 2s ease-out infinite;
+  border: 3px solid rgba(37, 211, 102, 0.8);
+  animation: whatsapp-pulse-ring 1.8s ease-out infinite;
   pointer-events: none;
+}
+
+.whatsapp-pulse > * {
+  position: relative;
+  z-index: 1;
+}
+
+.whatsapp-pulse img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  object-fit: contain;
 }
 
 @keyframes whatsapp-pulse-ring {
