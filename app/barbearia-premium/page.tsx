@@ -643,11 +643,11 @@ export default function BarbeariaPremium() {
       <button
         onClick={openWhatsApp}
         aria-label="Agendar pelo WhatsApp"
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200"
+        className="whatsapp-pulse fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200"
         style={{ filter: "drop-shadow(0 4px 12px rgba(37, 211, 102, 0.5))" }}
       >
         <Image
-          src="/whatsapp-button.png"
+          src="/whatsapp_float.png"
           alt="WhatsApp"
           width={64}
           height={64}

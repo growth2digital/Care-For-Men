@@ -699,11 +699,11 @@ export default function Massagem1Page() {
       {/* WhatsApp Floating Button */}
       <button
         onClick={() => openWhatsApp()}
-        className="contato-whatsapp fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all"
+        className="contato-whatsapp whatsapp-pulse fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all"
         style={{ background: "#25D366", boxShadow: "0 4px 20px rgba(37,211,102,0.4)" }}
         aria-label="Chamar no WhatsApp"
       >
-        <Image src="/whatsapp-button.png" alt="WhatsApp" width={28} height={28} />
+        <Image src="/whatsapp_float.png" alt="WhatsApp" width={28} height={28} />
       </button>
     </div>
   )

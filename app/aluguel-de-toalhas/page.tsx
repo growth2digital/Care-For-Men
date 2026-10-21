@@ -464,7 +464,7 @@ export default function AluguelToalhasLP() {
       <button
         type="button"
         onClick={() => openWhatsApp()}
-        className="contato-whatsapp fixed bottom-4 right-4 z-50 rounded-full p-1 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] sm:bottom-6 sm:right-6"
+        className="contato-whatsapp whatsapp-pulse fixed bottom-4 right-4 z-50 rounded-full p-1 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] sm:bottom-6 sm:right-6"
         aria-label="Falar com a Care For Men pelo WhatsApp"
       >
         <Image

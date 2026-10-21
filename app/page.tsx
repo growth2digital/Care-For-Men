@@ -605,7 +605,7 @@ export default function HomePage() {
                     onClick={openWhatsApp}
                     className="contato-whatsapp w-full bg-gradient-coral text-white font-semibold py-4 rounded-full glow-coral flex items-center justify-center gap-2"
                   >
-                    <Image src="/whatsapp-logo.svg" alt="WhatsApp" width={24} height={24} />
+                    <Image src="/whatsapp_float.png" alt="WhatsApp" width={24} height={24} />
                     <span>Agendar pelo WhatsApp</span>
                   </Button>
                 </div>
@@ -652,10 +652,10 @@ export default function HomePage() {
       <button
         id="botao-flutuante-whatsapp"
         onClick={openWhatsApp}
-        className="contato-whatsapp fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 md:w-16 md:h-16 rounded-full shadow-lg flex items-center justify-center bg-whatsapp hover:bg-whatsapp-dark transition-all duration-300 hover:scale-110 glow-coral"
+        className="contato-whatsapp whatsapp-pulse fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 md:w-16 md:h-16 rounded-full shadow-lg flex items-center justify-center bg-whatsapp hover:bg-whatsapp-dark transition-all duration-300 hover:scale-110 glow-coral"
         aria-label="Contato via WhatsApp"
       >
-        <Image src="/whatsapp-logo.svg" alt="WhatsApp" width={32} height={32} className="w-8 h-8 md:w-10 md:h-10" />
+        <Image src="/whatsapp_float.png" alt="WhatsApp" width={32} height={32} className="w-8 h-8 md:w-10 md:h-10" />
       </button>
     </div>
   )
