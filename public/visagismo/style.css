@@ -493,10 +493,70 @@ html { scroll-behavior: smooth; }
 .feature-item i { font-size: 23px; color: #efbb5c; }
 
 @media (min-width: 769px) {
-    .hero-section { min-height: 850px; padding-top: 150px; }
-    .hero-section .hero-bg img { object-position: 70% center; }
-    .hero-content { max-width: 580px; }
-    .title { font-size: 72px; }
+    .hero-section {
+        min-height: calc(100vh - 100px);
+        padding-top: 112px;
+        padding-bottom: 34px;
+    }
+
+    .hero-section .hero-bg img {
+        object-position: 70% 22%;
+    }
+
+    .hero-section .container {
+        max-width: 1180px;
+    }
+
+    .hero-flex {
+        max-width: 650px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        max-width: 610px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .title {
+        max-width: 560px;
+        font-size: clamp(3.5rem, 5.2vw, 4.65rem);
+        line-height: .91;
+        margin-bottom: 18px;
+    }
+
+    .highlight-text {
+        max-width: 475px;
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
+
+    .visagismo-prices {
+        max-width: 600px;
+        margin: 16px 0 18px;
+    }
+
+    .visagismo-prices > div {
+        min-height: 86px;
+        padding: 12px 16px;
+    }
+
+    .visagismo-prices strong {
+        font-size: 24px;
+    }
+
+    .hero-section .primary-btn {
+        max-width: 600px;
+        min-height: 56px;
+    }
+
+    .hero-features {
+        max-width: 600px;
+        padding-top: 14px;
+    }
 }
 
 @media (max-width: 768px) {
