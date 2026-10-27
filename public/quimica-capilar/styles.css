@@ -1016,3 +1016,141 @@ section {
 .lightbox-close:hover {
     color: var(--color-accent);
 }
+
+/* Hero premium inspirado na referência mobile */
+.hero-reference {
+    min-height: 780px;
+    padding-top: 112px;
+    background: #050505;
+    overflow: hidden;
+}
+
+.hero-reference .hero-bg {
+    z-index: 0;
+    background-image: linear-gradient(90deg, rgba(5, 5, 5, .98) 0%, rgba(5, 5, 5, .88) 43%, rgba(5, 5, 5, .2) 100%), url('assets/images/hero-quimica-capilar.jpeg');
+    background-position: center right;
+    filter: saturate(.9);
+}
+
+.hero-reference .hero-container {
+    min-height: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-reference .hero-content {
+    max-width: 610px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-kicker {
+    color: var(--color-accent) !important;
+    font-size: .95rem !important;
+    font-weight: 600;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    margin: 0 0 20px !important;
+}
+
+.hero-reference .hero-content h1 {
+    font-size: clamp(3.4rem, 6vw, 5.6rem);
+    line-height: .98;
+    letter-spacing: -.035em;
+    margin-bottom: 26px;
+}
+
+.hero-reference .hero-content h1 span {
+    color: var(--color-accent);
+}
+
+.hero-reference .hero-subtitle {
+    max-width: 540px;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.hero-reference .hero-buttons {
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.hero-reference .hero-buttons .btn {
+    min-height: 54px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .78rem;
+}
+
+.hero-reference .hero-buttons .btn-solid {
+    box-shadow: 0 12px 30px rgba(212, 175, 55, .18);
+}
+
+.hero-highlights {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 650px;
+    border-top: 1px solid rgba(212, 175, 55, .28);
+    padding-top: 18px;
+    gap: 0;
+}
+
+.hero-highlights span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    color: var(--color-accent);
+    font-size: 1.8rem;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.hero-highlights span:last-child { border-right: 0; }
+.hero-highlights small { color: #e5e5e5; font-size: .68rem; line-height: 1.25; }
+
+.hero-image-box {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-reference {
+        min-height: 760px;
+        padding-top: 100px;
+        align-items: flex-end;
+    }
+
+    .hero-reference .hero-bg {
+        background-image: linear-gradient(90deg, rgba(5,5,5,.96) 0%, rgba(5,5,5,.72) 48%, rgba(5,5,5,.12) 100%), url('assets/images/hero-quimica-capilar.jpeg');
+        background-position: 62% center;
+    }
+
+    .hero-reference .hero-container {
+        min-height: 660px;
+        align-items: flex-end;
+        padding-bottom: 28px;
+    }
+
+    .hero-reference .hero-content h1 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+    }
+
+    .hero-reference .hero-subtitle {
+        font-size: 1rem;
+        max-width: 330px;
+    }
+
+    .hero-reference .hero-buttons {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .hero-reference .hero-buttons .btn { width: 100%; }
+    .hero-highlights { grid-template-columns: repeat(5, 1fr); }
+    .hero-highlights span { padding: 0 4px; font-size: 1.25rem; }
+    .hero-highlights small { font-size: .54rem; }
+}
