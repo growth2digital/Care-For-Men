@@ -943,6 +943,22 @@ section {
     }
 }
 
+.whatsapp-float {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+    width: 64px !important;
+    height: 64px !important;
+    z-index: 2147483647;
+    overflow: visible !important;
+}
+
+.whatsapp-float-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+
 @media (max-width: 768px) {
     .whatsapp-float {
         position: fixed !important;
@@ -1019,6 +1035,41 @@ section {
 
 /* Hero premium inspirado na referência mobile */
 .hero-reference {
+    position: relative;
+}
+
+.hero-reference .hero-bg {
+    background-image: linear-gradient(90deg, rgba(5, 5, 5, .98) 0%, rgba(5, 5, 5, .9) 48%, rgba(5, 5, 5, .5) 100%);
+}
+
+.hero-reference .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.hero-reference .hero-image-box {
+    display: block;
+    width: min(44%, 530px);
+    height: 610px;
+    flex: 0 0 min(44%, 530px);
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, .25);
+    border-radius: 4px;
+    box-shadow: 0 24px 70px rgba(0,0,0,.45);
+}
+
+.hero-reference .hero-image-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+/* Hero premium inspirado na referência mobile */
+.hero-reference {
     min-height: 780px;
     padding-top: 112px;
     background: #050505;
@@ -1027,13 +1078,17 @@ section {
 
 .hero-reference .hero-bg {
     z-index: 0;
-    background-image: linear-gradient(90deg, rgba(5, 5, 5, .98) 0%, rgba(5, 5, 5, .88) 43%, rgba(5, 5, 5, .2) 100%), url('assets/images/hero-quimica-capilar.jpeg');
+    background-image: linear-gradient(90deg, rgba(5, 5, 5, .98) 0%, rgba(5, 5, 5, .9) 48%, rgba(5, 5, 5, .5) 100%);
     background-position: center right;
     filter: saturate(.9);
 }
 
 .hero-reference .hero-container {
     min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
     position: relative;
     z-index: 1;
 }
@@ -1114,10 +1169,18 @@ section {
 .hero-highlights small { color: #e5e5e5; font-size: .68rem; line-height: 1.25; }
 
 .hero-image-box {
-    display: none;
+    display: block;
 }
 
 @media (max-width: 768px) {
+    .hero-reference .hero-container {
+        display: block;
+    }
+
+    .hero-reference .hero-image-box {
+        display: none;
+    }
+
     .hero-reference {
         min-height: 760px;
         padding-top: 100px;
