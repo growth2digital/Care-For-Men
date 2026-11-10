@@ -90,7 +90,7 @@ export default function MassagemPage() {
     },
     {
       title: "Massagem Reversa",
-      description: "Experiência premium focada em conforto, conexão corporal e relaxamento diferenciado em ambiente reservado.",
+      description: "Experiência premium focada em conforto, conexão corporal e relaxamento diferenciado.",
       image: "/massagem/servico-reversa.jpg",
     },
     {
@@ -124,7 +124,7 @@ export default function MassagemPage() {
     {
       icon: <Shield className="w-7 h-7" />,
       title: "Exclusividade",
-      description: "Ambiente reservado e atendimento premium.",
+      description: "Ambiente premium e atendimento profissional.",
     },
   ]
 
@@ -177,8 +177,8 @@ export default function MassagemPage() {
       answer: "As sessões variam de acordo com o tipo escolhido, geralmente entre 60 e 90 minutos. Na hora do agendamento informamos a duração exata de cada serviço.",
     },
     {
-      question: "O ambiente é privativo?",
-      answer: "Sim. Todas as sessões acontecem em salas privativas e climatizadas. Garantimos total discrição e conforto durante toda a experiência.",
+      question: "Como funciona o atendimento?",
+      answer: "As sessões acontecem em espaços climatizados, com atendimento profissional, conforto e cuidado em cada etapa.",
     },
     {
       question: "Quais formas de pagamento são aceitas?",
@@ -471,7 +471,7 @@ export default function MassagemPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {[
               { name: "Recepção", image: "/barbearia-real/recepcao.jpg" },
-              { name: "Lounge Exclusivo", image: "/barbearia-real/lounge-2.jpg" },
+              { name: "Lounge Premium", image: "/barbearia-real/lounge-2.jpg" },
               { name: "Sala Premium", image: "/barbearia-real/sala-atendimento.jpg" },
               { name: "Ambiente Relaxante", image: "/barbearia-real/espaco-massagem.jpg" },
               { name: "Sala de Atendimento", image: "/barbearia-real/ambiente-premium.jpg" },

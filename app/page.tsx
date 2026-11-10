@@ -364,7 +364,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1 bg-gradient-coral mx-auto rounded-full mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-              Ambiente exclusivo e discreto, projetado para oferecer o máximo de conforto e privacidade para nossos
+              Ambiente premium e acolhedor, projetado para oferecer conforto e qualidade para nossos
               clientes.
             </p>
           </div>
@@ -598,7 +598,7 @@ export default function HomePage() {
                     <h3 className="text-lg font-semibold text-white">Atendimento Exclusivo</h3>
                   </div>
                   <p className="text-gray-400 text-sm mb-6">
-                    Trabalhamos apenas com agendamento prévio para garantir total privacidade e atendimento
+                    Trabalhamos com agendamento para garantir organização, pontualidade e atendimento
                     personalizado. Entre em contato para agendar seu horário.
                   </p>
                   <Button

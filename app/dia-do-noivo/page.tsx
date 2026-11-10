@@ -27,7 +27,7 @@ const GOLD = '#d4af37'
 const experienceImages = [
   { src: '/barbearia-real/sala-atendimento.jpg', alt: 'Atendimento premium na Care For Men' },
   { src: '/barbearia-real/massagem-sessao.jpg', alt: 'Momento de relaxamento e cuidado' },
-  { src: '/barbearia-real/ambiente-premium.jpg', alt: 'Ambiente premium e privativo' },
+  { src: '/barbearia-real/ambiente-premium.jpg', alt: 'Ambiente premium e confortável' },
   { src: '/barbearia-real/lounge-2.jpg', alt: 'Lounge para o Dia do Noivo' },
 ]
 
@@ -63,7 +63,7 @@ const plans = [
     name: 'BLACK',
     label: 'EXCLUSIVO',
     price: 'R$ 1.290',
-    items: ['Tudo do Gold', 'Sala privativa exclusiva', 'Depilação à escolha', 'Kit Grooming Care For Men', 'Experiência personalizada'],
+    items: ['Tudo do Gold', 'Atendimento personalizado', 'Depilação à escolha', 'Kit Grooming Care For Men', 'Experiência personalizada'],
     className: 'bg-[#111] text-white border border-[#333]',
     buttonClass: 'bg-[#d4af37] text-[#0a0a0a] hover:bg-[#c39e2d]',
     footnote: '*Mediante disponibilidade',
@@ -71,7 +71,7 @@ const plans = [
 ]
 
 export default function DiaDoNoivoPage() {
-  const openWhatsApp = (message = 'Olá! Gostaria de reservar meu Dia do Noivo na Care For Men.') => {
+  const openWhatsApp = (message = 'Olá! Gostaria de agendar meu Dia do Noivo na Care For Men.') => {
     window.open(`https://wa.me/5511949912798?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer')
   }
 
@@ -181,7 +181,7 @@ export default function DiaDoNoivoPage() {
                     </li>
                   ))}
                 </ul>
-                <button onClick={() => openWhatsApp(`Olá! Quero reservar o plano ${plan.name}.`)} className={`contato-whatsapp mt-8 flex w-full items-center justify-center gap-2 rounded-md py-3 text-sm font-bold transition-colors ${plan.buttonClass}`}>
+                <button onClick={() => openWhatsApp(`Olá! Quero agendar o plano ${plan.name}.`)} className={`contato-whatsapp mt-8 flex w-full items-center justify-center gap-2 rounded-md py-3 text-sm font-bold transition-colors ${plan.buttonClass}`}>
                   RESERVE
                   <Image src="/whatsapp_float.png" alt="" width={20} height={20} className="size-5 object-contain" />
                 </button>

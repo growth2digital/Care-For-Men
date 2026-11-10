@@ -442,7 +442,7 @@ export default function CuidadosMasculinosPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {[
               { src: "/barbearia-real/recepcao.jpg", label: "Recepção" },
-              { src: "/barbearia-real/lounge-2.jpg", label: "Lounge" },
+              { src: "/barbearia-real/lounge-2.jpg", label: "Lounge Premium" },
               { src: "/barbearia-real/sala-atendimento.jpg", label: "Atendimento" },
               { src: "/barbearia-real/espaco-massagem.jpg", label: "Massagem" },
               { src: "/barbearia-real/ambiente-premium.jpg", label: "Ambiente" },
