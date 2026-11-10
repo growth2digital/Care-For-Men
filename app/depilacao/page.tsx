@@ -105,7 +105,7 @@ export default function DepilacaoPage() {
     { src: "/depilacao/espaco-sala-atendimento.jpg", alt: "Sala de atendimento com maca e cadeira" },
     { src: "/depilacao/espaco-lounge-tv.jpg", alt: "Sala de estar com TV e plantas" },
     { src: "/depilacao/espaco-salao.jpg", alt: "Salão com quadros e cadeiras de barbeiro" },
-    { src: "/depilacao/espaco-sala-maca.jpg", alt: "Sala reservada com maca de atendimento" },
+    { src: "/depilacao/espaco-sala-maca.jpg", alt: "Sala de atendimento com maca" },
   ]
 
   const differentials = [
@@ -139,12 +139,12 @@ export default function DepilacaoPage() {
     {
       question: "Posso fazer várias regiões no mesmo atendimento?",
       answer:
-        "Sim. Você pode combinar quantas regiões quiser em uma única sessão. Informe as áreas desejadas no agendamento para reservarmos o tempo adequado.",
+        "Sim. Você pode combinar quantas regiões quiser em uma única sessão. Informe as áreas desejadas no agendamento para organizarmos o tempo adequado.",
     },
     {
       question: "Preciso agendar?",
       answer:
-        "Sim, todos os atendimentos são feitos com hora marcada para garantir sua privacidade e pontualidade. O agendamento é rápido pelo WhatsApp.",
+        "Sim, todos os atendimentos são feitos com hora marcada para garantir pontualidade e qualidade. O agendamento é rápido pelo WhatsApp.",
     },
     {
       question: "Quanto tempo dura o procedimento?",
@@ -466,7 +466,7 @@ export default function DepilacaoPage() {
               Um ambiente pensado para <span className="text-gradient">o seu conforto</span>
             </h2>
             <p className="text-gray-400 mt-3 max-w-2xl mx-auto leading-relaxed">
-              Estrutura moderna, reservada e higienizada no coração dos Jardins, para você viver uma
+              Estrutura moderna, confortável e higienizada no coração dos Jardins, para você viver uma
               experiência completa de cuidado masculino.
             </p>
           </div>

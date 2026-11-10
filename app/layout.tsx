@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "massagem masculina",
     "barbearia São Paulo",
     "Alto do Ipiranga",
-    "atendimento privativo",
+    "atendimento profissional",
     "cuidados masculinos",
     "estética masculina",
     "barbearia discreta",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Care For Men SP",
     title: "Care For Men SP - Barbearia de Alto Padrão",
     description:
-      "Barbearia masculina especializada em atendimento privativo e discreto. Corte de cabelo, depilação, massagens e tratamentos estéticos para homens em São Paulo.",
+      "Barbearia masculina especializada em atendimento profissional e discreto. Corte de cabelo, depilação, massagens e tratamentos estéticos para homens em São Paulo.",
     images: [
       {
         url: "/logo-round.png",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Care For Men SP - Barbearia de Alto Padrão",
     description:
-      "Barbearia masculina especializada em atendimento privativo e discreto. Agendamento exclusivo em São Paulo.",
+      "Barbearia masculina especializada em atendimento profissional e discreto. Agendamento exclusivo em São Paulo.",
     images: ["/logo-round.png"],
     creator: "@careformen.sp",
   },

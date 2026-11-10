@@ -70,7 +70,7 @@ export default function Massagem1Page() {
     {
       icon: <Lock className="w-7 h-7" />,
       title: "Privacidade",
-      description: "Ambiente reservado e atendimento individual. Sua discrição garantida em cada detalhe.",
+      description: "Ambiente premium e atendimento individual, com conforto e cuidado em cada detalhe.",
     },
     {
       icon: <Sparkles className="w-7 h-7" />,
@@ -93,7 +93,7 @@ export default function Massagem1Page() {
     {
       icon: <Sofa className="w-6 h-6" />,
       title: "Lounge Exclusivo",
-      description: "Espaço reservado para relaxar antes ou depois da sessão.",
+      description: "Espaço confortável para relaxar antes ou depois da sessão.",
     },
     {
       icon: <Droplets className="w-6 h-6" />,
@@ -131,7 +131,7 @@ export default function Massagem1Page() {
     {
       icon: <Lock className="w-6 h-6" />,
       title: "Segurança",
-      description: "Sua privacidade é nossa prioridade.",
+      description: "Seu conforto é nossa prioridade.",
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
@@ -165,7 +165,7 @@ export default function Massagem1Page() {
     {
       name: "Daniel C.",
       rating: 5,
-      text: "Nunca pensei que um lugar assim existia em SP. A privacidade, o conforto, os produtos... tudo impecável.",
+      text: "Nunca pensei que um lugar assim existia em SP. O conforto, os produtos e a qualidade do atendimento... tudo impecável.",
       service: "Pedras Quentes",
     },
     {
@@ -177,7 +177,7 @@ export default function Massagem1Page() {
     {
       name: "Gustavo M.",
       rating: 5,
-      text: "O lounge exclusivo antes da sessão já vale a visita. Depois da massagem você sai completamente renovado.",
+      text: "O lounge premium antes da sessão já vale a visita. Depois da massagem você sai completamente renovado.",
       service: "Massagem Quatro Mãos",
     },
     {
@@ -329,7 +329,7 @@ export default function Massagem1Page() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto text-pretty leading-relaxed">
-              Cada detalhe foi pensado para proporcionar conforto, privacidade e uma experiência premium completa de bem-estar.
+              Cada detalhe foi pensado para proporcionar conforto e uma experiência premium completa de bem-estar.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

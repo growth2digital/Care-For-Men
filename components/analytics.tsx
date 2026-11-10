@@ -64,7 +64,7 @@ export function Analytics() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "Care For Men SP",
-        description: "Barbearia masculina especializada em atendimento privativo e discreto",
+        description: "Barbearia masculina especializada em atendimento profissional e premium",
         url: "https://lp.careformen.com.br",
         telephone: "+5511979641006",
         address: {
